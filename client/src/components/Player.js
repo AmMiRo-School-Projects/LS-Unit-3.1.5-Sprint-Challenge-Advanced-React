@@ -16,9 +16,9 @@ const PlayerDiv = styled.div`
 function Player(props) {
   return (
     <PlayerDiv>
-      <h3>{props.player.name}</h3>
-      <p>{`Country: ${props.player.country}`}</p>
-      <p>{`Searches: ${props.player.searches}`}</p>
+      <h3 data-testid="name">{props.player.name}</h3>
+      <p data-testid="country">{`Country: ${props.player.country}`}</p>
+      <p data-testid="searches">{`Searches: ${props.player.searches}`}</p>
     </PlayerDiv>
   );
 }

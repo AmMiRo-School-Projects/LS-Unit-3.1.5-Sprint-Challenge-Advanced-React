@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import PlayerList from "./components/PlayerList";
 import Toggle from "./components/Toggle";
+import Graph from "./components/Graph";
 import styled from "styled-components";
 
 const AppDiv = styled.div`
@@ -32,6 +33,7 @@ class App extends React.Component {
     return (
       <AppDiv className="App">
         <Toggle />
+        <Graph players={this.state.players} />
         <PlayerList players={this.state.players} />
       </AppDiv>
     );
